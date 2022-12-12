@@ -1,0 +1,71 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 40px;
+    color: white;
+}
+h1,h2{
+    font-size: 50px;
+    color: chartreuse;
+}
+body{
+    background-image: linear-gradient(rgba(6,10,15,0.6),rgba(6,10,15,0.6)), url(https://img.freepik.com/free-photo/top-view-food-frame-with-copy-space_23-2148723447.jpg?size=626&ext=jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+section{
+    padding: 10px;
+    margin: 10px;
+} */
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 40px;
+    color: white;
+    font-family: 'Helvetica', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+h1,h2{
+    font-size: 50px;
+    color: rgb(245, 237, 23);
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-weight: 700
+}
+body{
+    background-image: linear-gradient(rgba(6,10,15,0.6),rgba(6,10,15,0.6)), url(Logo\ images/aboutbg.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+section{
+    padding: 10px;
+    margin: 10px;
+}
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
