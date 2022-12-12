@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <!-- <link rel="stylesheet" href="signup.css"> -->
+    <link rel="icon" href="Logo.jpeg" type="image/x-icon">
+    <title>DoorDelight</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.05em;
+        }
+        
+        .logo{
+             position: absolute;
+            top: 20px;
+            left: 20px; 
+            float: left;
+            width:150px;
+            height:150px;
+            cursor: pointer;
+            clip-path: circle(50% at 50% 50%);
+          } 
+        
+    
+      
+    
+html { 
+    /* background: url(https://img.freepik.com/free-photo/top-view-food-frame-with-copy-space_23-2148723447.jpg?size=626&ext=jpg) no-repeat center center fixed #000;  */
+    background-image: linear-gradient(rgba(6,10,15,0.6),rgba(6,10,15,0.6)), url(https://img.freepik.com/free-photo/top-view-food-frame-with-copy-space_23-2148723447.jpg?size=626&ext=jpg);
+   /* opacity: 0.8; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body{
+    height:755px;
+    margin-bottom: 2%;
+}
+.container{
+    width:40%;
+    margin:80px auto;
+    margin-bottom: 0px;
+    background-color: aliceblue;
+    padding-bottom: 15px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow:
+    inset 0 -3em 3em rgba(104, 102, 102, 0.1),
+          0 0  0 0.5px rgb(32, 24, 24),
+          0.3em 0.3em 1em rgba(43, 42, 42, 0.3);
+         
+    
+}
+.heading{
+            width:100%;
+            background-color: rgb(0, 174, 255);
+            color: white;
+            box-sizing: border-box;  
+            border-radius:  10px 10px 0px 0px; 
+            
+            padding: 2%;}
+            .heading>h1{
+                font-size: 3em;
+               
+            }
+            
+            .heading>p{
+                font-size: .8em;
+                
+            }
+           
+        .main{
+            padding:0 5%;
+            padding-bottom: -5%;
+           font-size: 1em;
+           font-weight: 800;
+        }
+        label{
+            font-weight: bold;
+        }
+      
+       input[type=text] ,input[type=email], input[type=password],input[type=number] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 3px solid rgb(24, 23, 23);
+            box-sizing: border-box;
+            border-radius: 4px;
+            font-size: .8em;
+        }
+        button{
+            margin:20px 20px 10px 0;
+            padding:10px 20px;
+            color: white;
+            font-size: 20px;
+            font-weight: 800;
+            background-color: #4CAF50;
+            border: 1px solid white;
+            border:3px solid white ;
+            border-radius: 15px;
+            cursor: pointer;
+            
+        }
+        button:hover{
+            opacity: 0.5;
+        }
+        
+        
+        .main-footer {
+            box-sizing: border-box;
+            width:40%;
+            margin:0px auto ;
+            margin-bottom: 50px;
+            background-color: rgb(0, 174, 255);
+            color: white;
+            padding: 15px ;
+            position: sticky;
+            bottom: 0px;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+.nav a {
+    display: inline-block;
+    padding: .3em .5em;
+    color: white;
+    text-decoration: none;
+}
+    </style>
+</head>
+
+<body>
+    <a href="Doordelight.html"> <img src="Logo images/Logo.png"class="logo" alt=""> </a>
+    
+    <form action="signup.php" method="post">
+        <div class="container">
+            <div class="heading">
+                <h1>Sign up</h1>
+                <p>Fill this form to create an account</p>
+                <p class="submitmsg">Thanks for submitting</p>
+            </div>
+            <br>
+            <div class="main">
+                <div>
+                    <label for="fname">First name</label>
+                    <input type="text" name="fname" id="fname" placeholder="Enter your first name here" required>
+                    <label for="lname">Last name</label>
+                    <input type="text" name="lname" id="lname" placeholder="Enter your last name here" required>
+                </div>
+                <label for="email">Email id :</label>
+                <input type="email" name="email" id="email" placeholder="Enter email id" required>
+                <br>
+                <label for="psw">Password: </label>
+                <input type="password" name="psw" id="psw" placeholder="Enter password" required>
+
+                <br>
+                <label for="cpsw">Confirm password: </label>
+                <input type="password" name="cpsw" id="cpsw" required>
+                <br>
+                <label for="check">
+                    <input type="checkbox" checked="checked" name="check" id="check"> Remember me
+                </label>
+
+                <br><br>
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue; background-color: white;">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+                    <button type="submit" class="signupbtn" onclick="alert('Thanks for Signing up. Your data is submitted')">Sign Up</button>
+                </div>
+            </div>
+
+
+
+        </div>
+        <footer class="main-footer" >
+            <div class="contain main-footer-container" >
+                <h2>DoorDelight</h2>
+    
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Logo images/Youtube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/home" target="_blank">
+                            <img src="Logo images/Twiiter Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Logo images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    </form>
+    
+</body>
+
+</html>
